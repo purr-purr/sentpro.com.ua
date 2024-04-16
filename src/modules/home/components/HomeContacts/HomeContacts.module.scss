@@ -25,6 +25,7 @@
 .contacts {
 	@include flex($justify: space-between, $gap: 24px);
 	list-style-type: none;
+	margin-bottom: 48px;
 
 	&Inner {
 		width: 25%;

@@ -1,0 +1,35 @@
+.container {
+	@include flex($gap: 23px);
+	margin-bottom: 200px;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--bold-text);
+	width: 100%;
+}
+
+.leftSide {
+	width: 466px;
+	min-width: 466px;
+}
+
+.rightSide {
+	strong {
+		color: var(--bold-text);
+	}
+
+	p {
+		margin-bottom: 1rem;
+	}
+
+	ul {
+		padding-left: 1rem;
+		margin-bottom: 1rem;
+
+		li::marker {
+			font-size: 10px;
+		}
+	}
+}
