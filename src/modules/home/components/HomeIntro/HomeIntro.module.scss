@@ -1,0 +1,31 @@
+.container {
+	padding-top: 60px;
+	background: url('../../assets/blur-2.svg') no-repeat;
+	background-position-x: left;
+	background-position-y: top;
+	height: 2000px;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 600;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
+.description {
+	max-width: 593px;
+	font-size: 20px;
+	margin-bottom: 48px;
+}
+
+.poster {
+	max-width: 708px;
+	width: 100%;
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}

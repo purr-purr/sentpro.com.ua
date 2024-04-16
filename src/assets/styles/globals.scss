@@ -1,0 +1,93 @@
+@import "mixins";
+
+:root {
+	--main-bg: #1A1A1A;
+	--primary: #0016E0;
+	--main-text: #ADB2B1;
+	--bold-text: #fff;
+	--white: #FFF;
+
+	--dark: #222;
+	--gray: #FAFAF9;
+	--light-gray: #808080;
+	--blue: #0056B8;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+	&::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	&::-webkit-scrollbar-button {
+		height: 0;
+		width: 100%;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--primary);
+		border-radius: 50px;
+	}
+
+	&::-webkit-scrollbar-track-piece {
+		background-color: var(--main-bg);
+	}
+}
+
+html,
+body {
+	height: 100%;
+	background-color: var(--main-bg);
+	--scroll-behavior: smooth;
+	scroll-behavior: smooth;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	color: var(--main-text);
+}
+
+body, button {
+	font-family: 'Montseratt', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+	transition: opacity .3s ease-in-out;
+
+	&:hover {
+		text-decoration: none;
+		opacity: .8;
+		transition: opacity .3s ease-in-out;
+	}
+}
+
+button {
+	cursor: pointer;
+}
+
+p, a {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+
+	@include media($mobile-bp) {
+		font-size: 14px;
+	}
+}
+
+details > summary {
+	list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+	display: none;
+}
