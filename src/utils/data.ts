@@ -1,6 +1,6 @@
-import {INavigation} from "@utils/types";
+import {type INavigationList} from "@utils/types";
 
-export const navigation: INavigation[] = [
-	{title: 'Title', path: '/'},
-	{title: 'Title2', path: '/'},
+export const navigationList: INavigationList[] = [
+	{title: 'Title', path: 'sdfsdfs'},
+	{title: 'Контакти', path: 'contacts'},
 ];

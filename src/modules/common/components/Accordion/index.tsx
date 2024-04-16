@@ -8,8 +8,10 @@ const Accordion: FC<{
 }> = ({title, children}) => {
 	return (
 		<details className={s.container}>
-			<summary className={s.title}>{title}</summary>
-			{children}
+			<summary className={s.heading}>{title}</summary>
+			<div className={s.content}>
+				{children}
+			</div>
 		</details>
 	);
 }

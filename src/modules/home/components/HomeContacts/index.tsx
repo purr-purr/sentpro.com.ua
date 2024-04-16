@@ -42,7 +42,7 @@ const HomeContacts = () => {
 	];
 
 	return (
-		<section className={s.container}>
+		<section className={s.container} id="contacts">
 			<BlockTitle title="Контактна інформація"/>
 
 			<ul className={s.contacts}>

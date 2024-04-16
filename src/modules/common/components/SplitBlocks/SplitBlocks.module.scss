@@ -16,11 +16,13 @@
 }
 
 .rightSide {
+	width: 100%;
+
 	strong {
 		color: var(--bold-text);
 	}
 
-	p {
+	& > p {
 		margin-bottom: 1rem;
 	}
 

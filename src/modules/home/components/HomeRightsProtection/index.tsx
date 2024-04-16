@@ -1,6 +1,7 @@
 import s from './HomeRightsProtection.module.scss';
 import BlockTitle from "@modules/common/components/BlockTitle";
 import SplitBlocks from "@modules/common/components/SplitBlocks";
+import Accordion from "@modules/common/components/Accordion";
 
 const HomeRightsProtection = () => {
 	return (
@@ -37,7 +38,40 @@ const HomeRightsProtection = () => {
 
 			<SplitBlocks
 				title="звітність"
-				titleType="heading">2text</SplitBlocks>
+				titleType="heading"
+			>
+				<Accordion title={'Факторинг'}>
+					<p>Також, Споживач може звернутись до Національного банку України,
+						перейшовши за посиланням в розділ «Звернення громадян» на сторінці
+						офіційного Інтернет-представництва Національного банку України, а
+						саме:
+						https://bank.gov.ua/ua/consumer-protection/citizens-appeals.</p>
+				</Accordion>
+
+				<Accordion title={'Факторинг'}>
+					<p>Також, Споживач може звернутись до Національного банку України,
+						перейшовши за посиланням в розділ «Звернення громадян» на сторінці
+						офіційного Інтернет-представництва Національного банку України, а
+						саме:
+						https://bank.gov.ua/ua/consumer-protection/citizens-appeals.</p>
+				</Accordion>
+
+				<Accordion title={'Факторинг'}>
+					<p>Також, Споживач може звернутись до Національного банку України,
+						перейшовши за посиланням в розділ «Звернення громадян» на сторінці
+						офіційного Інтернет-представництва Національного банку України, а
+						саме:
+						https://bank.gov.ua/ua/consumer-protection/citizens-appeals.</p>
+				</Accordion>
+
+				<Accordion title={'Факторинг'}>
+					<p>Також, Споживач може звернутись до Національного банку України,
+						перейшовши за посиланням в розділ «Звернення громадян» на сторінці
+						офіційного Інтернет-представництва Національного банку України, а
+						саме:
+						https://bank.gov.ua/ua/consumer-protection/citizens-appeals.</p>
+				</Accordion>
+			</SplitBlocks>
 		</section>
 	);
 }

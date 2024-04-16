@@ -2,7 +2,7 @@ export interface IMessageData {
 	[key: string]: string;
 }
 
-export interface INavigation {
+export interface INavigationList {
 	title: string;
 	path: string;
 }

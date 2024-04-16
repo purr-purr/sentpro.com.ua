@@ -1,17 +1,21 @@
 import s from './HomeIntro.module.scss';
-// import Image from 'next/image';
-// import INTRO_IMAGE from '@modules/home/assets/hands.png'
+import Image from 'next/image';
+import INTRO_IMAGE from '@modules/home/assets/intro-poster.jpg'
 
 const HomeIntro = () => {
 	return (
 		<section className={s.container}>
-			<article>
-				<h1 className={s.title}>TITLE</h1>
-				<p className={s.description}>text</p>
+			<article className={s.info}>
+				<h1 className={s.infoTitle}>Перетворіть ваші <br/>
+					фінансові цілі у реальність
+				</h1>
+				<p className={s.infoDesc}>
+					{`Місія ТОВ "СЕНТ ПРО" - забезпечити наших клієнтів доступом до різноманітних фінансових рішень, що відповідають їхнім потребам та сприяють їхньому успіху.`}
+				</p>
 			</article>
 
 			<div className={s.poster}>
-				{/*<Image src={INTRO_IMAGE} alt="Home intro"/>*/}
+				<Image src={INTRO_IMAGE} alt="Home intro"/>
 			</div>
 		</section>
 	);

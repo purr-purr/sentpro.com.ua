@@ -20,7 +20,7 @@
 	}
 ;
 
-	&:hover {
+	&:hover, &.active {
 		color: var(--bold-text);
 
 		&:after {
