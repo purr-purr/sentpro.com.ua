@@ -7,9 +7,10 @@ const SplitBlocks: FC<{
 	children: ReactNode;
 	title: string;
 	titleType: 'text' | 'heading';
-}> = ({children, titleType, title}) => {
+	anchor?: string;
+}> = ({children, titleType, title, anchor}) => {
 	return (
-		<article className={s.container}>
+		<article className={s.container} id={anchor}>
 			<aside className={s.leftSide}>
 				{titleType === 'text' && <h4 className={s.title}>{title}</h4>}
 				{titleType === 'heading' && <BlockSubTitle title={title}/>}

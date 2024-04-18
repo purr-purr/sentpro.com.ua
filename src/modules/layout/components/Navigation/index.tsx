@@ -1,20 +1,19 @@
 import s from './Navigation.module.scss';
-import Link from "next/link";
-import {navigationList} from "@utils/data";
+import {navigationList,} from "@utils/data";
 import type {INavigationList} from "@utils/types";
-import cn from "classnames";
-import {useRouter} from "next/router";
+import Link from "next/link";
 
 const Navigation = () => {
-	const router = useRouter();
-	const isActivePage = (path: string) => router.asPath.includes(path);
-	//TODO not done yet
+
 	return (
 		<ul className={s.container}>
-			{navigationList.map((item: INavigationList) => (
+			{navigationList.map((item: INavigationList) => item.isActive && (
 				<li key={item.title}>
-					<Link href={`#${item.path}`}
-					      className={cn(s.link, isActivePage(item.path) && s.active)}>
+					<Link
+						key={item.title}
+						href={item.path}
+						className={s.link}
+					>
 						{item.title}
 					</Link>
 				</li>

@@ -4,7 +4,7 @@ import SplitBlocks from "@modules/common/components/SplitBlocks";
 
 const HomeReportViolation = () => {
 	return (
-		<section className={s.container}>
+		<section className={s.container} id="report-violation">
 			<BlockTitle title="Повідомити про порушення"/>
 
 			<SplitBlocks

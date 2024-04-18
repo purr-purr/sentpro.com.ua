@@ -23,12 +23,24 @@
 }
 
 .contacts {
-	@include flex($justify: space-between, $gap: 24px);
+	@include flex(flex-start, space-evenly, 24px);
+	flex-wrap: wrap;
 	list-style-type: none;
-	margin-bottom: 48px;
+	margin-block: 48px;
 
 	&Inner {
-		width: 25%;
+		@include flex($align: center, $gap: 16px);
+		max-width: 338px;
+		width: 100%;
+
+		& dt {
+			font-weight: 600;
+			color: var(--bold-text)
+		}
+
+		& dd a {
+			text-decoration: none;
+		}
 	}
 
 	&Icon {

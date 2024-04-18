@@ -1,1 +1,17 @@
-.container {}
+.advantages {
+	@include flex(flex-start, space-evenly, 24px);
+	flex-wrap: wrap;
+	list-style-type: none;
+	margin-block: 100px;
+
+	&Item {
+		@include flex($align: center, $gap: 24px);
+		flex-direction: column;
+		max-width: 338px;
+		width: 100%;
+	}
+
+	&Desc {
+		text-align: center;
+	}
+}

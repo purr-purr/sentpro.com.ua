@@ -8,6 +8,12 @@ import {
 import Link from "next/link";
 import BlockTitle from "@modules/common/components/BlockTitle";
 
+import ICON_MAP from '@public/assets/icon-map.svg';
+import ICON_EMAIL from '@public/assets/icon-email.svg';
+import ICON_PHONE from '@public/assets/icon-phone.svg';
+import ICON_TIME from '@public/assets/icon-time.svg';
+import IconFrame from "@modules/common/components/IconFrame";
+
 interface IContactItem {
 	icon: string;
 	title: string;
@@ -18,25 +24,25 @@ interface IContactItem {
 const HomeContacts = () => {
 	const contactsList: IContactItem[] = [
 		{
-			icon: 'phone',
+			icon: ICON_MAP,
 			title: 'Адреса',
 			desc: COMPANY_ADDRESS,
 		},
 		{
-			icon: 'phone',
-			title: 'електронна пошта',
+			icon: ICON_EMAIL,
+			title: 'Електронна Пошта',
 			desc: COMPANY_EMAIL,
 			link: `mailto:${COMPANY_EMAIL}`
 		},
 		{
-			icon: 'phone',
+			icon: ICON_PHONE,
 			title: 'Телефон',
 			desc: COMPANY_PHONE,
 			link: `tel:${COMPANY_PHONE}`
 		},
 		{
-			icon: 'phone',
-			title: 'Години роботи',
+			icon: ICON_TIME,
+			title: 'Години Роботи',
 			desc: 'ПН-ПТ з 9:00 до 19:00 Обідня перерва з 13:00 до 14:00'
 		},
 	];
@@ -48,7 +54,7 @@ const HomeContacts = () => {
 			<ul className={s.contacts}>
 				{contactsList.map((item) => (
 					<li key={item.title} className={s.contactsInner}>
-						<div className={s.contactsIcon}>icon</div>
+						<IconFrame icon={item.icon}/>
 						<dl>
 							<dt>{item.title}</dt>
 							<dd>{item.link ? (

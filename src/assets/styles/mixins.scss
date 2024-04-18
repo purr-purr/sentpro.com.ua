@@ -28,8 +28,10 @@
   }
 }
 
-@mixin pseudo($location: before) {
-  position: relative;
+@mixin pseudo($location: before, $pos-relative: true) {
+  @if $pos-relative != false {
+    position: relative;
+  }
 
   &::#{$location} {
     content: '';

@@ -1,11 +1,40 @@
 import s from './HomeAbout.module.scss';
 import BlockTitle from "@modules/common/components/BlockTitle";
 import SplitBlocks from "@modules/common/components/SplitBlocks";
+import IconFrame from "@modules/common/components/IconFrame";
+
+import ICON_MONEY from '@public/assets/icon-money.svg';
+import ICON_BUILDING from '@public/assets/icon-building.svg';
+import ICON_ANALYTICS from '@public/assets/icon-analytics.svg';
+import ICON_SECURITY from '@public/assets/icon-security.svg';
 
 const HomeAbout = () => {
+	const advantagesList = [
+		{
+			icon: ICON_MONEY,
+			desc: 'Порушення провадження у справі про банкрутство,' +
+				' застосування процедури санації фінансової установи - відсутні'
+		},
+		{icon: ICON_BUILDING, desc: 'Товариство не має відокремлених підрозділів'},
+		{
+			icon: ICON_ANALYTICS,
+			desc: 'Рішення про ліквідацію фінансової установи - не' +
+				' приймалось'
+		},
+		{icon: ICON_SECURITY, desc: 'Наглядова рада товариства - відсутня'},
+	]
 	return (
-		<section className={s.container}>
+		<section id="about">
 			<BlockTitle title="Про компанію"/>
+
+			<ul className={s.advantages}>
+				{advantagesList.map(item => (
+					<li className={s.advantagesItem} key={item.desc}>
+						<IconFrame icon={item.icon}/>
+						<p className={s.advantagesDesc}>{item.desc}</p>
+					</li>
+				))}
+			</ul>
 
 			<SplitBlocks
 				title={`ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "СЕНТ ПРО" (ТОВ "СЕНТ ПРО") зареєстроване як фінансова установа відповідно до Розпорядження Національної комісії`}
@@ -40,7 +69,10 @@ const HomeAbout = () => {
 
 			<SplitBlocks
 				title="Фінансові послуги"
-				titleType="heading">2text</SplitBlocks>
+				titleType="heading"
+				anchor="fin-services">
+				1
+			</SplitBlocks>
 		</section>
 	);
 };

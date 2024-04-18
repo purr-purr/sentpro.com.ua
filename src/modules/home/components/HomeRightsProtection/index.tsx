@@ -5,7 +5,7 @@ import Accordion from "@modules/common/components/Accordion";
 
 const HomeRightsProtection = () => {
 	return (
-		<section className={s.container}>
+		<section className={s.container} id="protection">
 			<BlockTitle title="Захист прав споживачів"/>
 
 			<SplitBlocks
@@ -39,6 +39,7 @@ const HomeRightsProtection = () => {
 			<SplitBlocks
 				title="звітність"
 				titleType="heading"
+				anchor="reports"
 			>
 				<Accordion title={'Факторинг'}>
 					<p>Також, Споживач може звернутись до Національного банку України,
