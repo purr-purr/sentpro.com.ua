@@ -1,11 +1,11 @@
-@import "mixins";
+@import 'mixins';
 
 :root {
-	--main-bg: #1A1A1A;
-	--primary: #0016E0;
-	--main-text: #ADB2B1;
+	--main-bg: #1a1a1a;
+	--primary: #0016e0;
+	--main-text: #adb2b1;
 	--bold-text: #fff;
-	--white: #FFF;
+	--white: #fff;
 }
 
 * {
@@ -49,20 +49,21 @@ body {
 	color: var(--main-text);
 }
 
-body, button {
+body,
+button {
 	font-family: 'Montseratt', sans-serif;
 }
 
 a {
 	scroll-margin-top: 100px;
-	color: inherit;
+	color: var(--bold-text);
 	text-decoration: underline;
-	transition: opacity .3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
 
 	&:hover {
 		text-decoration: none;
-		opacity: .8;
-		transition: opacity .3s ease-in-out;
+		opacity: 0.8;
+		transition: opacity 0.3s ease-in-out;
 	}
 }
 
@@ -70,7 +71,8 @@ button {
 	cursor: pointer;
 }
 
-p, a {
+p,
+a {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.2;
@@ -86,4 +88,9 @@ details > summary {
 
 details > summary::-webkit-details-marker {
 	display: none;
+}
+
+section,
+article {
+	scroll-margin-top: 100px;
 }

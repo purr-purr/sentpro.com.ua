@@ -7,12 +7,12 @@
 	height: 400px;
 	border-radius: 80px;
 	overflow: hidden;
-	filter: grayscale(.8);
-	transition: filter .4s ease-in-out;
+	filter: grayscale(0.8);
+	transition: filter 0.4s ease-in-out;
 
 	&:hover {
 		filter: grayscale(0);
-		transition: filter .4s ease-in-out;
+		transition: filter 0.4s ease-in-out;
 	}
 
 	&Frame {
@@ -35,15 +35,12 @@
 
 		& dt {
 			font-weight: 600;
-			color: var(--bold-text)
+			color: var(--bold-text);
 		}
 
 		& dd a {
 			text-decoration: none;
+			color: inherit;
 		}
-	}
-
-	&Icon {
-
 	}
 }

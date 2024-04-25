@@ -1,6 +1,17 @@
 .container {
+	max-width: 335px;
+	width: 100%;
 	font-size: 40px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--bold-text);
+
+	@include pseudo(before) {
+		left: -185px;
+		top: -260px;
+		width: 601px;
+		height: 558px;
+		background: url('../../assets/block-sub-title-blur.svg') no-repeat center/100%;
+		z-index: -1;
+	}
 }

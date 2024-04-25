@@ -1,18 +1,21 @@
-import s from './HomeContacts.module.scss';
+import Link from 'next/link';
+
+import BlockTitle from '@modules/common/components/BlockTitle';
+import IconFrame from '@modules/common/components/IconFrame';
+
 import {
 	COMPANY_ADDRESS,
 	COMPANY_EMAIL,
 	COMPANY_MAP_LINK,
-	COMPANY_PHONE
-} from "@utils/const";
-import Link from "next/link";
-import BlockTitle from "@modules/common/components/BlockTitle";
+	COMPANY_PHONE,
+} from '@utils/const';
 
-import ICON_MAP from '@public/assets/icon-map.svg';
 import ICON_EMAIL from '@public/assets/icon-email.svg';
+import ICON_MAP from '@public/assets/icon-map.svg';
 import ICON_PHONE from '@public/assets/icon-phone.svg';
 import ICON_TIME from '@public/assets/icon-time.svg';
-import IconFrame from "@modules/common/components/IconFrame";
+
+import s from './HomeContacts.module.scss';
 
 interface IContactItem {
 	icon: string;
@@ -32,34 +35,40 @@ const HomeContacts = () => {
 			icon: ICON_EMAIL,
 			title: 'Електронна Пошта',
 			desc: COMPANY_EMAIL,
-			link: `mailto:${COMPANY_EMAIL}`
+			link: `mailto:${COMPANY_EMAIL}`,
 		},
 		{
 			icon: ICON_PHONE,
 			title: 'Телефон',
 			desc: COMPANY_PHONE,
-			link: `tel:${COMPANY_PHONE}`
+			link: `tel:${COMPANY_PHONE}`,
 		},
 		{
 			icon: ICON_TIME,
 			title: 'Години Роботи',
-			desc: 'ПН-ПТ з 9:00 до 19:00 Обідня перерва з 13:00 до 14:00'
+			desc: 'ПН-ПТ з 9:00 до 19:00 Обідня перерва з 13:00 до 14:00',
 		},
 	];
 
 	return (
 		<section className={s.container} id="contacts">
-			<BlockTitle title="Контактна інформація"/>
+			<BlockTitle title="Контактна інформація" />
 
 			<ul className={s.contacts}>
 				{contactsList.map((item) => (
 					<li key={item.title} className={s.contactsInner}>
-						<IconFrame icon={item.icon}/>
+						<IconFrame icon={item.icon} />
 						<dl>
 							<dt>{item.title}</dt>
-							<dd>{item.link ? (
-								<Link href={item.link} target="_blank">{item.desc}</Link>
-							) : item.desc}</dd>
+							<dd>
+								{item.link ? (
+									<Link href={item.link} target="_blank">
+										{item.desc}
+									</Link>
+								) : (
+									item.desc
+								)}
+							</dd>
 						</dl>
 					</li>
 				))}
@@ -76,6 +85,6 @@ const HomeContacts = () => {
 			</div>
 		</section>
 	);
-}
+};
 
 export default HomeContacts;

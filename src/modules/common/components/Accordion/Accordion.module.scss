@@ -11,7 +11,7 @@
 
 	&[open] .heading:before {
 		opacity: 0;
-		transition: opacity .3s ease-in-out;
+		transition: opacity 0.3s ease-in-out;
 	}
 }
 
@@ -38,7 +38,7 @@
 		height: 15px;
 		background-color: var(--bold-text);
 		opacity: 1;
-		transition: opacity .3s ease-in-out;
+		transition: opacity 0.3s ease-in-out;
 	}
 }
 
