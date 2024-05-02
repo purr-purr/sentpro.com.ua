@@ -2,29 +2,15 @@ import BlockTitle from '@modules/common/components/BlockTitle';
 import IconFrame from '@modules/common/components/IconFrame';
 import SplitBlocks from '@modules/common/components/SplitBlocks';
 
-import ICON_ANALYTICS from '@public/assets/icon-analytics.svg';
-import ICON_BUILDING from '@public/assets/icon-building.svg';
-import ICON_MONEY from '@public/assets/icon-money.svg';
-import ICON_SECURITY from '@public/assets/icon-security.svg';
-
 import s from './HomeAbout.module.scss';
 import Accordion from "@modules/common/components/Accordion";
+import {
+	advantagesList,
+	lendingDocumentsList
+} from "@modules/home/components/HomeAbout/data";
+import DocumentsList from "@modules/common/components/DocumentsList";
 
 const HomeAbout = () => {
-	const advantagesList = [
-		{
-			icon: ICON_MONEY,
-			desc:
-				'Порушення провадження у справі про банкрутство,' +
-				' застосування процедури санації фінансової установи - відсутні',
-		},
-		{icon: ICON_BUILDING, desc: 'Товариство не має відокремлених підрозділів'},
-		{
-			icon: ICON_ANALYTICS,
-			desc: 'Рішення про ліквідацію фінансової установи - не' + ' приймалось',
-		},
-		{icon: ICON_SECURITY, desc: 'Наглядова рада товариства - відсутня'},
-	];
 	return (
 		<section id="about">
 			<BlockTitle title="Про компанію"/>
@@ -81,15 +67,84 @@ const HomeAbout = () => {
 				anchor="fin-services"
 			>
 				<Accordion title="Кредитування">
-					1
+					<DocumentsList list={lendingDocumentsList}/>
 				</Accordion>
 
 				<Accordion title="Факторинг">
-					1
+					Базові умови, ціна та тарифи послуги з факторингу:
+
+					<ol>
+						<li>Вид операцій<br/>
+							Факторинг з регресом.
+						</li>
+						<li>Валюта операцій<br/>
+							Гривня.
+						</li>
+						<li>Період відстрочки платежу<br/>
+							До 91 дня.
+						</li>
+						<li>Вимоги до клієнта<br/>
+							Юридичні або фізичні особи – підприємці, які працюють на ринку
+							більше
+							1 року, та здійснюють підприємницьку діяльність.
+						</li>
+						<li>Вимоги до боржника<br/>
+							Співпраця з клієнтом не менш ніж 6 місяців, за які здійснено не
+							менше
+							3 поставок продукції або послуг.
+						</li>
+						<li>Максимальний розмір фінансування<br/>
+							85 % від суми боргу, підтвердженого документально.
+						</li>
+						<li>Процентна ставка фінансування<br/>
+							25 % річних.
+						</li>
+						<li> Комісійна винагорода за обслуговування<br/>
+							1 % від суми фінансування.
+						</li>
+					</ol>
+					<br/>
+					Остаточні умови укладення договору факторингу визначаються рішенням
+					уповноваженого органу компанії, застосовуючи принципи індивідуального
+					підходу до кожного клієнта.
 				</Accordion>
 
 				<Accordion title="Лізинг">
-					1
+					Базові умови, ціна та тарифи фінансового лізингу:
+
+					<ol>
+						<li>Вид операцій<br/>
+							Фінансовий лізинг.
+						</li>
+						<li>Валюта операцій<br/>
+							Гривня.
+						</li>
+						<li>Строк лізингу<br/>
+							Від 12 до 60 місяців.
+						</li>
+						<li>Об’єкти лізингу<br/>
+							Легкові та вантажні автомобілі, автобуси.
+						</li>
+						<li>Авансовий платіж<br/>
+							Від 20 % вартості майна.
+						</li>
+						<li>Періодичність лізингових платежів<br/>
+							Щомісячно, рівними частинами.
+						</li>
+						<li>Ставка лізингових процентів<br/>
+							Від 21 % річних.
+						</li>
+						<li>Комісійна винагорода<br/>
+							1 % від суми фінансування (без урахування авансового платежу).
+						</li>
+						<li>Перехід права власності<br/>
+							Після повної сплати лізингових платежів.
+						</li>
+					</ol>
+					<br/>
+					Остаточні умови укладення договору фінансового лізингу визначаються
+					рішенням уповноваженого органу компанії, застосовуючи принципи
+					індивідуального підходу до кожного клієнта.
 				</Accordion>
 			</SplitBlocks>
 		</section>

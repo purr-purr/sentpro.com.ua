@@ -46,18 +46,18 @@ const HomeContacts = () => {
 		{
 			icon: ICON_TIME,
 			title: 'Години Роботи',
-			desc: 'ПН-ПТ з 9:00 до 19:00 Обідня перерва з 13:00 до 14:00',
+			desc: 'ПН-ПТ з 9:00 до 19:00. Обідня перерва з 13:00 до 14:00',
 		},
 	];
 
 	return (
 		<section className={s.container} id="contacts">
-			<BlockTitle title="Контактна інформація" />
+			<BlockTitle title="Контактна інформація"/>
 
 			<ul className={s.contacts}>
 				{contactsList.map((item) => (
 					<li key={item.title} className={s.contactsInner}>
-						<IconFrame icon={item.icon} />
+						<IconFrame icon={item.icon}/>
 						<dl>
 							<dt>{item.title}</dt>
 							<dd>

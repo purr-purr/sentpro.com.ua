@@ -26,12 +26,12 @@
 		margin-bottom: 1rem;
 	}
 
-	ul {
+	ul, ol {
 		padding-left: 1rem;
 		margin-bottom: 1rem;
+	}
 
-		li::marker {
-			font-size: 10px;
-		}
+	ul li::marker {
+		font-size: 10px;
 	}
 }

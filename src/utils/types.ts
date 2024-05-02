@@ -7,3 +7,8 @@ export interface INavigationList {
 	path: string;
 	isActive: boolean;
 }
+
+export interface IDocumentsListProps {
+	title: string;
+	link: string;
+}
