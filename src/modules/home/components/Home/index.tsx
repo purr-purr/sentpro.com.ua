@@ -1,17 +1,26 @@
-import HomeAbout from '@modules/home/components/HomeAbout';
-import HomeContacts from '@modules/home/components/HomeContacts';
-import HomeIntro from '@modules/home/components/HomeIntro';
-import HomeReportViolation from '@modules/home/components/HomeReportViolation';
-import HomeRightsProtection from '@modules/home/components/HomeRightsProtection';
+import About from '@modules/home/components/About';
+import Contacts from '@modules/home/components/Contacts';
+import Intro from '@modules/home/components/Intro';
+import ReportViolation from '@modules/home/components/ReportViolation';
+import RightsProtection from '@modules/home/components/RightsProtection';
+import FinancialServices from "@modules/home/components/FinancialServices";
+import Reports from "@modules/home/components/Reports";
 
 const Home = () => {
 	return (
 		<>
-			<HomeIntro />
-			<HomeAbout />
-			<HomeRightsProtection />
-			<HomeReportViolation />
-			<HomeContacts />
+			<Intro/>
+
+			<About>
+				<FinancialServices/>
+			</About>
+
+			<RightsProtection>
+				<Reports/>
+			</RightsProtection>
+
+			<ReportViolation/>
+			<Contacts/>
 		</>
 	);
 };

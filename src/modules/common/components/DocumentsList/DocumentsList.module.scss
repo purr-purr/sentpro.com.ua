@@ -4,9 +4,7 @@
 }
 
 .item {
-	&:not(:last-of-type) {
-		margin-bottom: 14px;
-	}
+	margin-bottom: 14px;
 
 	a {
 		@include flex($align: center);
@@ -19,4 +17,8 @@
 		height: 24px;
 		margin-right: 4px;
 	}
+}
+
+.groupTitle {
+	color: var(--main-text);
 }

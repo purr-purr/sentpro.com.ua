@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 import DOCUMENT_ICON from '../../assets/document-icon.svg';
 import s from './DocumentsList.module.scss';
-import type {IDocumentsListProps} from "@utils/types";
+import type {IDocumentsList, IDocumentsListGroup} from "@utils/types";
 
-const DocumentItem: FC<IDocumentsListProps> = ({title, link}) => {
+const DocumentItem: FC<IDocumentsList> = ({title, link}) => {
 	return (
 		<li className={s.item}>
 			<Link href={link} target="_blank">
@@ -17,16 +17,33 @@ const DocumentItem: FC<IDocumentsListProps> = ({title, link}) => {
 	);
 };
 
+type IDocumentsLoop = IDocumentsList[];
+
 const DocumentsList: FC<{
-	list: IDocumentsListProps[];
-}> = ({list}) => {
+	list?: IDocumentsList[];
+	groupList?: IDocumentsListGroup[];
+}> = ({list, groupList}) => {
+	const listLoop = (array: IDocumentsLoop) => {
+		return (
+			<ul className={s.container}>
+				{array.map((item: IDocumentsList) => (
+					<DocumentItem key={item.title} title={item.title} link={item.link}/>
+				))}
+			</ul>
+		)
+	};
+
 	return (
-		<ul className={s.container}>
-			{list.map((item: IDocumentsListProps) => (
-				<DocumentItem key={item.title} title={item.title} link={item.link}/>
+		<>
+			{groupList?.map((item: IDocumentsListGroup) => (
+				<>
+					<h4 className={s.groupTitle}>{item.groupTitle}</h4>
+					{listLoop(item.list)}
+				</>
 			))}
-		</ul>
-	);
+			{list && listLoop(list)}
+		</>
+	)
 };
 
 export default DocumentsList;
