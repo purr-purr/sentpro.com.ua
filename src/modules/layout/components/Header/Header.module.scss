@@ -7,6 +7,10 @@
 	padding-block: 38px 24px;
 	@include flex(center, space-between, 24px);
 
+	@include media($mobile-bp) {
+		padding-block-start: 24px;
+	}
+
 	&:after {
 		content: '';
 		position: absolute;

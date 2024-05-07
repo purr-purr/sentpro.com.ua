@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import {FC} from 'react';
 import Head from 'next/head';
 
 import {
@@ -12,39 +12,39 @@ import LOGO from '@public/assets/logo.svg';
 
 const Meta: FC<{
 	title?: string;
-}> = ({ title }) => {
+}> = ({title}) => {
 	const manifestPath: string = '/assets/manifest.json';
 	const metaTitle: string = title
 		? `${title} ${COMPANY_FULL_NAME}`
 		: COMPANY_FULL_NAME;
 	const metaDesc: string =
-		COMPANY_FULL_NAME +
-		'НЕЗВАЖАЮЧИ НА ВІЙСЬКОВИЙ СТАН, ЖИТТЯ ПРОДОВЖУЄТЬСЯ! ' +
-		"Приєднуйтесь до нас у нашій місії відновлення України! В цей важкий час країна потребує нашої об'єднаної підтримки більше ніж будь-коли раніше.";
+		COMPANY_FULL_NAME + ' ' + "ПЕРЕТВОРІТЬ ВАШІ ФІНАНСОВІ ЦІЛІ У РЕАЛЬНІСТЬ." +
+		" Місія" +
+		" ТОВ \"СЕНТ ПРО\" - забезпечити наших клієнтів доступом до різноманітних фінансових рішень, що відповідають їхнім потребам та сприяють їхньому успіху.";
 	return (
 		<Head>
-			<meta charSet="utf-8" />
-			<meta name="author" content={APP_AUTHOR_FULL_SIGNATURE} />
-			<meta name="viewport" content="width=device-width, initial-scale=1" />
-			<link href={FAVICON.src} rel="icon" />
-			<meta content="width=device-width, initial-scale=1" name="viewport" />
-			<meta content="#fff" name="theme-color" />
-			<meta content={metaTitle} name="description" />
-			<link href={FAVICON.src} rel="apple-touch-icon" />
-			<link href={manifestPath} rel="manifest" />
+			<meta charSet="utf-8"/>
+			<meta name="author" content={APP_AUTHOR_FULL_SIGNATURE}/>
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+			<link href={FAVICON.src} rel="icon"/>
+			<meta content="width=device-width, initial-scale=1" name="viewport"/>
+			<meta content="#fff" name="theme-color"/>
+			<meta content={metaTitle} name="description"/>
+			<link href={FAVICON.src} rel="apple-touch-icon"/>
+			<link href={manifestPath} rel="manifest"/>
 			<title>{metaTitle}</title>
-			<meta name="description" content={metaDesc} />
-			<meta name="image" content={LOGO.src} />
-			<meta property="og:type" content="website" />
-			<meta property="og:title" content={metaTitle} />
-			<meta property="og:description" content={metaDesc} />
-			<meta property="og:image" content={LOGO.src} />
-			<meta property="og:url" content={APP_LINK} />
-			<link rel="canonical" href={APP_LINK} />
-			<meta name="apple-mobile-web-app-title" content={metaTitle} />
-			<meta name="apple-mobile-web-app-capable" content="yes" />
-			<meta name="format-detection" content="telephone=no" />
-			<meta name="format-detection" content="address=no" />
+			<meta name="description" content={metaDesc}/>
+			<meta name="image" content={LOGO.src}/>
+			<meta property="og:type" content="website"/>
+			<meta property="og:title" content={metaTitle}/>
+			<meta property="og:description" content={metaDesc}/>
+			<meta property="og:image" content={LOGO.src}/>
+			<meta property="og:url" content={APP_LINK}/>
+			<link rel="canonical" href={APP_LINK}/>
+			<meta name="apple-mobile-web-app-title" content={metaTitle}/>
+			<meta name="apple-mobile-web-app-capable" content="yes"/>
+			<meta name="format-detection" content="telephone=no"/>
+			<meta name="format-detection" content="address=no"/>
 		</Head>
 	);
 };

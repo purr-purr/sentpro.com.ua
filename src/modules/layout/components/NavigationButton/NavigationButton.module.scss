@@ -4,7 +4,7 @@
 	width: 34px;
 	height: 34px;
 
-	@include media($mobile-bp) {
+	@include media($laptop-bp) {
 		padding-left: 20px;
 		padding-right: 20px;
 		width: 74px;

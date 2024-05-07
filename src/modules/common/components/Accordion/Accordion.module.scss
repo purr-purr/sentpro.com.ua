@@ -23,6 +23,10 @@
 	margin-bottom: 16px;
 	cursor: pointer;
 
+	@include media($mobile-bp) {
+		font-size: 18px;
+	}
+
 	@include pseudo(after) {
 		right: 0;
 		bottom: 0;

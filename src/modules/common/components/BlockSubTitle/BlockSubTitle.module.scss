@@ -6,6 +6,10 @@
 	text-transform: uppercase;
 	color: var(--bold-text);
 
+	@include media($mobile-bp) {
+		font-size: 26px;
+	}
+
 	@include pseudo(before) {
 		left: -185px;
 		top: -260px;

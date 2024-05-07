@@ -2,7 +2,7 @@
 	@include flex($align: center, $gap: 40px);
 	list-style-type: none;
 
-	@include media($mobile-bp) {
+	@include media($laptop-bp) {
 		display: none;
 	}
 
@@ -40,10 +40,13 @@
 		transition: width 0.3s ease-in-out;
 	}
 
-	@include media($mobile-bp) {
+	@include media($laptop-bp) {
 		display: block;
 		width: fit-content;
 		margin-bottom: 14px;
+	}
+
+	@include media($mobile-bp) {
 		font-size: 18px;
 	}
 

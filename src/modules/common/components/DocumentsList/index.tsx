@@ -1,10 +1,13 @@
-import {FC} from 'react';
+import {FC, Fragment} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import {v4 as uuidv4} from 'uuid';
 
 import DOCUMENT_ICON from '../../assets/document-icon.svg';
 import s from './DocumentsList.module.scss';
 import type {IDocumentsList, IDocumentsListGroup} from "@utils/types";
+
+type IDocumentsLoop = IDocumentsList[];
 
 const DocumentItem: FC<IDocumentsList> = ({title, link}) => {
 	return (
@@ -17,17 +20,21 @@ const DocumentItem: FC<IDocumentsList> = ({title, link}) => {
 	);
 };
 
-type IDocumentsLoop = IDocumentsList[];
-
 const DocumentsList: FC<{
 	list?: IDocumentsList[];
 	groupList?: IDocumentsListGroup[];
 }> = ({list, groupList}) => {
+	const uuid: string = uuidv4();
+
 	const listLoop = (array: IDocumentsLoop) => {
 		return (
 			<ul className={s.container}>
-				{array.map((item: IDocumentsList) => (
-					<DocumentItem key={item.title} title={item.title} link={item.link}/>
+				{array.map((item: IDocumentsList, index: number) => (
+					<DocumentItem
+						key={uuid + index}
+						title={item.title}
+						link={item.link}
+					/>
 				))}
 			</ul>
 		)
@@ -35,11 +42,11 @@ const DocumentsList: FC<{
 
 	return (
 		<>
-			{groupList?.map((item: IDocumentsListGroup) => (
-				<>
+			{groupList?.map((item: IDocumentsListGroup, index: number) => (
+				<Fragment key={uuid + index}>
 					<h4 className={s.groupTitle}>{item.groupTitle}</h4>
 					{listLoop(item.list)}
-				</>
+				</Fragment>
 			))}
 			{list && listLoop(list)}
 		</>
