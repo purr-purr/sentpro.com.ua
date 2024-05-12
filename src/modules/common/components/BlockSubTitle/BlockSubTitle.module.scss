@@ -17,5 +17,12 @@
 		height: 558px;
 		background: url('../../assets/block-sub-title-blur.svg') no-repeat center/100%;
 		z-index: -1;
+
+		@include media($mobile-bp) {
+			left: -165px;
+			top: -200px;
+			width: 420px;
+			height: 444px;
+		}
 	}
 }

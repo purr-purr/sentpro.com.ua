@@ -7,6 +7,7 @@
 	@include media($laptop-bp) {
 		padding-left: 20px;
 		padding-right: 20px;
+		margin-right: -22px;
 		width: 74px;
 		position: relative;
 		z-index: 1;

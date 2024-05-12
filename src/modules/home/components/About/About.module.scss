@@ -6,22 +6,17 @@
 
 	@include media($mobile-bp) {
 		margin-block: 50px;
-		gap: 12px;
+		gap: 24px;
 	}
 
 	&Item {
 		@include flex($align: center, $gap: 24px);
-		flex-direction: column;
 		max-width: 338px;
 		width: 100%;
 
 		@include media($mobile-bp) {
 			gap: 12px;
-			max-width: 270px;
+			max-width: unset;
 		}
-	}
-
-	&Desc {
-		text-align: center;
 	}
 }
