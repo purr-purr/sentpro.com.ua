@@ -1,22 +1,23 @@
+import { FC, type ReactNode } from 'react';
+
 import BlockTitle from '@modules/common/components/BlockTitle';
 import IconFrame from '@modules/common/components/IconFrame';
 import SplitBlocks from '@modules/common/components/SplitBlocks';
+import { advantagesList } from '@modules/home/components/About/data';
 
 import s from './About.module.scss';
-import {advantagesList} from "@modules/home/components/About/data";
-import {FC, type ReactNode} from "react";
 
 const About: FC<{
-	children?: ReactNode
-}> = ({children}) => {
+	children?: ReactNode;
+}> = ({ children }) => {
 	return (
 		<section id="about">
-			<BlockTitle title="Про компанію"/>
+			<BlockTitle title="Про компанію" />
 
 			<ul className={s.advantages}>
 				{advantagesList.map((item) => (
 					<li className={s.advantagesItem} key={item.desc}>
-						<IconFrame icon={item.icon}/>
+						<IconFrame icon={item.icon} />
 						<p className={s.advantagesDesc}>{item.desc}</p>
 					</li>
 				))}
@@ -27,10 +28,8 @@ const About: FC<{
 				titleType="text"
 			>
 				<p>
-					Установа здійснює державне регулювання у сфері ринків фінансових
-					послуг від
-					02.06.2020 року № 1123 (Свідоцтво про реєстрацію фінансової установи
-					ФК
+					Установа здійснює державне регулювання у сфері ринків фінансових послуг від
+					02.06.2020 року № 1123 (Свідоцтво про реєстрацію фінансової установи ФК
 					№В0000145 від 27.01.2021) господарська діяльність установи полягає у
 					наданні фінансових послуг:
 				</p>
@@ -42,14 +41,13 @@ const About: FC<{
 
 				<p>
 					Ідентифікаційний код юридичної особи: 43580771
-					<br/>
+					<br />
 					Місцезнаходження юридичної особи: Україна, 03056, місто Київ, вул.
 					Борщагівська, буд. 154
-					<br/>
+					<br />
 					Керівник - БОГДАН ОЛЕКСАНДР ЄВГЕНОВИЧ
-					<br/>
-					Звертатися з отримання фінансових послуг можете за адресою: Україна,
-					03056,
+					<br />
+					Звертатися з отримання фінансових послуг можете за адресою: Україна, 03056,
 					місто Київ, вул.Борщагівська, будинок 154 або за телефоном
 					+38(091)-481-94-67
 				</p>
