@@ -1,31 +1,19 @@
-import { importDoc } from '@utils/formatters';
-import { IDocumentsListGroup, type IDocumentsList } from '@utils/types';
+import {importDoc} from '@utils/formatters';
+import {IDocumentsListGroup, type IDocumentsList} from '@utils/types';
 
 export const innerRules: IDocumentsList[] = [
 	{
-		title: 'Кредити до 06.03.2024',
-		link: importDoc('Rules_credits_Sent-Pro.pdf'),
-	},
-	{
-		title: 'Фінансовий лізинг до 06.03.2024',
-		link: importDoc('pravyla_lizyngSP.pdf'),
-	},
-	{
-		title: 'Факторинг до 06.03.2024',
-		link: importDoc('pravyla_faktoryngSP.pdf'),
-	},
-	{
-		title: 'Кредити станом на 06.03.2024',
+		title: 'Правила надання юридичним особам та фізичним особам - підприємцям фінансової послуги з надання коштів та банківських металів у кредит, діють з 06.03.2024',
 		link: importDoc(
 			'PRAVYLA-nadannia-yur.os.-ta-pidpryiemtsiam-nadannia-koshtiv-ta-bank.met.-u-kredyt.pdf',
 		),
 	},
 	{
-		title: 'Фінансовий лізинг станом на 06.03.2024',
+		title: 'ПРАВИЛА надання юридичним особам фінансової послуги з фінансового лізингу, діють з 06.03.2024',
 		link: importDoc('PRAVYLA-nadannia-posluh-z-finansovoho-lizynhu.pdf'),
 	},
 	{
-		title: 'Факторинг станом на 06.03.2024',
+		title: 'Правила надання юридичним особам та фізичним особам - підприємцям фінансової послуги з факторингу, діють з 06.03.2024',
 		link: importDoc('PRAVYLA-faktorynhu.pdf'),
 	},
 ];
@@ -47,7 +35,7 @@ export const infoFinancialInstitution: IDocumentsList[] = [
 		title:
 			'Інформація щодо ТОВ «СЕНТ ПРО», умов та порядку діяльності, уключно щодо фінансових послуг, які надаються ТОВ «СЕНТ ПРО» клієнту',
 		link: importDoc(
-			'1.Informatsiia_shchodo_umov_ta_poriadku_diialnosti_TOV_SENT_PRO.pdf',
+			'2. Informatsiia shchodo, umov ta poriadku diialnosti TOV SENT PRO.pdf',
 		),
 	},
 	{
@@ -58,7 +46,7 @@ export const infoFinancialInstitution: IDocumentsList[] = [
 	},
 	{
 		title: 'Публічна інформація про ТОВ «СЕНТ ПРО»',
-		link: importDoc('5.Publichna_informatsiia_pro_kompaniiu_TOV_SENT_PRO.pdf'),
+		link: importDoc('3. Publichna informatsiia pro kompaniiu TOV SENT PRO.pdf'),
 	},
 ];
 
@@ -145,6 +133,31 @@ export const infoOwnershipStructure: IDocumentsListGroup[] = [
 
 export const financeReports: IDocumentsListGroup[] = [
 	{
+		groupTitle: '2023',
+		list: [
+			{
+				title: 'Баланс (Звіт про фінансовий стан) станом на 31.12.2023 р',
+				link: importDoc('Баланс (Звіт про фінансовий стан) станом на 31.12.2023 р.pdf'),
+			},
+			{
+				title: 'Звіт про фінансові результати (про сукупний дохід) за 2023 р',
+				link: importDoc('Звіт про фінансові результати (про сукупний дохід) за 2023 р.pdf'),
+			},
+			{
+				title: 'Звіт про рух грошових коштів (за прямим методом) за 2023 р',
+				link: importDoc('Звiт про рух грошових коштiв (за прямим методом) за 2023 р.pdf'),
+			},
+			{
+				title: 'Звіт про власний капітал за 2023 р.',
+				link: importDoc('Звіт про власний капітал за 2023 р.pdf'),
+			},
+			{
+				title: 'Примітки до річної фінансової звітності за 2023 р',
+				link: importDoc('Примітки до річної фінансової звітності за 2023 р.pdf'),
+			}
+		],
+	},
+	{
 		groupTitle: '2022',
 		list: [
 			{
@@ -211,6 +224,25 @@ export const archivedInformation: IDocumentsList[] = [
 			'Правила надання коштів у позику, в тому числі і на умовах фінансового кредиту - Редакція, яка діяла до 14.06.2023 включно',
 		link: importDoc('rules-credits-16082021.pdf'),
 	},
+	{
+		title: 'Кредити до 06.03.2024',
+		link: importDoc('Rules_credits_Sent-Pro.pdf'),
+	},
+	{
+		title: 'Фінансовий лізинг до 06.03.2024',
+		link: importDoc('pravyla_lizyngSP.pdf'),
+	},
+	{
+		title: 'Факторинг до 06.03.2024',
+		link: importDoc('pravyla_faktoryngSP.pdf'),
+	},
+	{
+		title:
+			'Порядок розгляду ТОВ «СЕНТ ПРО» звернень споживачів фінансових послуг',
+		link: importDoc(
+			'3.Poriadok_rozghliadu_zvernen_spozhyvachiv_TOV_SENT_PRO.pdf',
+		),
+	},
 ];
 
 export const auditReports: IDocumentsList[] = [
@@ -225,9 +257,27 @@ export const auditReports: IDocumentsList[] = [
 		link: importDoc('aud-zvit-2021.pdf'),
 	},
 	{
+		title: 'Незалежний звіт з надання впевненості щодо річних даних за 2021' +
+			' рік',
+		link: importDoc('Незалежний_звіт_з_надання_впевненності_щодо_річних_звітних_даних 2021.pdf'),
+	},
+	{
 		title:
 			'Звіт незалежного аудитора щодо фінансової звітності ТОВ «СЕНТ ПРО» за 2022 рік',
 		link: importDoc('zvit-audit2022.pdf'),
+	},
+	{
+		title: 'Незалежний звіт з надання впевненості щодо річних даних за 2022' +
+			' рік',
+		link: importDoc('Незалежний звіт з надання впевненості щодо річних звітних даних 2022.pdf'),
+	},
+	{
+		title: 'Звіт незалежного аудитора щодо фінансової звітності ТОВ «СЕНТ ПРО»  за 2023 рік',
+		link: importDoc('ТОВ «СЕНТ ПРО» Звіт_незалежного_аудитора_за_2023_рік (НБУ).pdf'),
+	},
+	{
+		title: 'Незалежний звіт з надання впевненості щодо річних даних за 2023 рік',
+		link: importDoc('ТОВ СЕНТ ПРО   Звіт з надання впевненості за 2023 рік.pdf'),
 	},
 ];
 
