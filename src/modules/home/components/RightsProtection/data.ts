@@ -7,6 +7,6 @@ export const rightsProtectionDocs: IDocumentsList[] = [
 		link: importDoc('1. Mekhanizmy zakhystu prav spozhyvachiv TOV SENT PRO.pdf'),
 	}, {
 		title: 'Витяг з Державного реєстру фінансових установ наданий при переоформленні ліцензії 26.03.2024',
-		link: importDoc(''),
+		link: importDoc('ТОВ_Сент_Про_витяг.pdf'),
 	},
 ];

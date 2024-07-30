@@ -10,7 +10,7 @@ export const innerRules: IDocumentsList[] = [
 	},
 	{
 		title: 'ПРАВИЛА надання юридичним особам фінансової послуги з фінансового лізингу, діють з 06.03.2024',
-		link: importDoc('PRAVYLA-nadannia-posluh-z-finansovoho-lizynhu.pdf'),
+		link: importDoc('PRAVYLA nadannia posluh z finansovoho lizynhu.pdf'),
 	},
 	{
 		title: 'Правила надання юридичним особам та фізичним особам - підприємцям фінансової послуги з факторингу, діють з 06.03.2024',
