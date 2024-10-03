@@ -7,15 +7,7 @@ export const innerRules: IDocumentsList[] = [
 		link: importDoc(
 			'PRAVYLA-nadannia-yur.os.-ta-pidpryiemtsiam-nadannia-koshtiv-ta-bank.met.-u-kredyt.pdf',
 		),
-	},
-	{
-		title: 'ПРАВИЛА надання юридичним особам фінансової послуги з фінансового лізингу, діють з 06.03.2024',
-		link: importDoc('PRAVYLA nadannia posluh z finansovoho lizynhu.pdf'),
-	},
-	{
-		title: 'Правила надання юридичним особам та фізичним особам - підприємцям фінансової послуги з факторингу, діють з 06.03.2024',
-		link: importDoc('PRAVYLA-faktorynhu.pdf'),
-	},
+	}
 ];
 
 export const infoFinancialInstitution: IDocumentsList[] = [
@@ -35,7 +27,7 @@ export const infoFinancialInstitution: IDocumentsList[] = [
 		title:
 			'Інформація щодо ТОВ «СЕНТ ПРО», умов та порядку діяльності, уключно щодо фінансових послуг, які надаються ТОВ «СЕНТ ПРО» клієнту',
 		link: importDoc(
-			'2. Informatsiia shchodo, umov ta poriadku diialnosti TOV SENT PRO.pdf',
+			'Informatsiia shchodo, umov ta poriadku diialnosti TOV SENT PRO.pdf',
 		),
 	},
 	{
@@ -46,7 +38,7 @@ export const infoFinancialInstitution: IDocumentsList[] = [
 	},
 	{
 		title: 'Публічна інформація про ТОВ «СЕНТ ПРО»',
-		link: importDoc('3. Publichna informatsiia pro kompaniiu TOV SENT PRO.pdf'),
+		link: importDoc('Publichna informatsiia pro kompaniiu TOV SENT PRO.pdf'),
 	},
 ];
 
@@ -242,6 +234,18 @@ export const archivedInformation: IDocumentsList[] = [
 		link: importDoc(
 			'3.Poriadok_rozghliadu_zvernen_spozhyvachiv_TOV_SENT_PRO.pdf',
 		),
+	},
+	{
+		title: 'ПРАВИЛА надання юридичним особам фінансової послуги з фінансового лізингу, діють з 06.03.2024',
+		link: importDoc('PRAVYLA nadannia posluh z finansovoho lizynhu.pdf'),
+	},
+	{
+		title: 'Правила надання юридичним особам та фізичним особам - підприємцям фінансової послуги з факторингу, діють з 06.03.2024',
+		link: importDoc('PRAVYLA-faktorynhu.pdf'),
+	},
+	{
+		title: 'Витяг з Державного реєстру фінансових установ наданий при переоформленні ліцензії 26.03.2024',
+		link: importDoc('ТОВ_Сент_Про_витяг.pdf'),
 	},
 ];
 

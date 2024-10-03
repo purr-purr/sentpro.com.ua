@@ -5,8 +5,9 @@ export const rightsProtectionDocs: IDocumentsList[] = [
 	{
 		title: 'Механізми захисту прав споживачів ТОВ «СЕНТ ПРО»',
 		link: importDoc('1. Mekhanizmy zakhystu prav spozhyvachiv TOV SENT PRO.pdf'),
-	}, {
-		title: 'Витяг з Державного реєстру фінансових установ наданий при переоформленні ліцензії 26.03.2024',
-		link: importDoc('ТОВ_Сент_Про_витяг.pdf'),
+	},
+	{
+		title: 'Витяг з Державного реєстру фінансових установ від 27.09.2024',
+		link: importDoc('витяг_з_державного_реєстру_фінансових_установ_ ТОВ “СЕНТ ПРО”.pdf'),
 	},
 ];
