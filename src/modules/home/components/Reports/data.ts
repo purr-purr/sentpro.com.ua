@@ -44,6 +44,55 @@ export const infoFinancialInstitution: IDocumentsList[] = [
 
 export const infoOwnershipStructure: IDocumentsListGroup[] = [
 	{
+		groupTitle: '2025',
+		list: [
+			{
+				title:
+					'Схематичне зображення структури власності ТОВ "СЕНТ ПРО" станом на 28.01.2025',
+				link: importDoc(
+					'1_Skhematychne zobrazhennia struktury vlasnosti TOV SENT PRO na 28.01.2025.pdf',
+				),
+			},
+			{
+				title:
+					'Відомості про остаточних ключових учасників у структурі власності надавача фінансових послуг ТОВ "СЕНТ ПРО" станом на 28.01.2025',
+				link: importDoc(
+					'2_Vidomosti pro ostatochnykh kliuchovykh uchasnykiv TOV SENT PRO na 28.01.2025.pdf',
+				),
+			},
+			{
+				title:
+					'Відомості про власників істотної участі в надавачі фінансових послуг ТОВ "СЕНТ ПРО" станом на 28.01.2025',
+				link: importDoc(
+					'3_Vidomosti pro vlasnykiv istotnoi uchasti TOV SENT PRO na 28.01.2025.pdf',
+				),
+			},
+
+
+			{
+				title:
+					'Схематичне зображення структури власності ТОВ "СЕНТ ПРО" станом на 01.01.2025',
+				link: importDoc(
+					'1_Skhem. zobrazh. struktury vlas. TOV SENT PRO na 01.01.2025.pdf',
+				),
+			},
+			{
+				title:
+					'Відомості про остаточних ключових учасників у структурі власності надавача фінансових послуг ТОВ "СЕНТ ПРО" станом на 01.01.2025',
+				link: importDoc(
+					'2_Vidomosti pro ost.kl.uchasn TOV SENT PRO na 01.01.2025.pdf',
+				),
+			},
+			{
+				title:
+					'Відомості про власників істотної участі в надавачі фінансових послуг ТОВ "СЕНТ ПРО" станом на 01.01.2025',
+				link: importDoc(
+					'3_Vidomosti pro vlasn. ist.uch. TOV SENT PRO na 01.01.2025.pdf',
+				),
+			},
+		],
+	},
+	{
 		groupTitle: '2024',
 		list: [
 			{
