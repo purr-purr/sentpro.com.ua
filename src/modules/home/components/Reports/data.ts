@@ -33,7 +33,7 @@ export const infoFinancialInstitution: IDocumentsList[] = [
 	{
 		title: 'Порядок обробки і захисту персональних даних у ТОВ «СЕНТ ПРО»',
 		link: importDoc(
-			'4.Poriadok_obrobky_i_zakhystu_personalnykh_danykh-_TOV_SENT_PRO.pdf',
+			'ПОРЯДОК обробки і захисту персональних даних у ТОВ СЕНТ ПРО.pdf',
 		),
 	},
 	{
