@@ -1,7 +1,7 @@
 import Accordion from '@modules/common/components/Accordion';
 import DocumentsList from '@modules/common/components/DocumentsList';
 import SplitBlocks from '@modules/common/components/SplitBlocks';
-import {lendingDocumentsList} from '@modules/home/components/About/data';
+import { lendingDocumentsList } from '@modules/home/components/About/data';
 
 const HomeFinancialServices = () => {
 	return (
@@ -11,21 +11,15 @@ const HomeFinancialServices = () => {
 			anchor="fin-services"
 		>
 			<Accordion title="Кредитування">
-				<DocumentsList list={lendingDocumentsList}/>
+				<DocumentsList list={lendingDocumentsList} />
 			</Accordion>
-			<br/>
-			<br/>
+			<br />
+			<br />
 			<p>
 				<strong>
-					УВАГА! Товариство не надає споживчі кредити у розумінні Закону України
-					&quot;Про споживче кредитування&quot;
-				</strong>
-			</p>
-			<p>
-				<strong>
-					{' '}
-					ТОВ «СЕНТ ПРО» не здійснює кредитування фізичних осіб та не здійснює
-					врегулювання простроченої заборгованості фізичних осіб.
+					УВАГА! Товариство не надає споживчі кредити у розумінні Закону України «Про
+					споживче кредитування». <br />
+					ТОВ &quot;СЕНТ ПРО&quot; не здійснює кредитування фізичних осіб.
 				</strong>
 			</p>
 		</SplitBlocks>
