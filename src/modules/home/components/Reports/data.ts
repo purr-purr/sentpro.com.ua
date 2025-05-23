@@ -1,5 +1,5 @@
-import { importDoc } from '@utils/formatters';
-import { IDocumentsListGroup, type IDocumentsList } from '@utils/types';
+import {importDoc} from '@utils/formatters';
+import {IDocumentsListGroup, type IDocumentsList} from '@utils/types';
 
 export const innerRules: IDocumentsList[] = [
 	{
@@ -409,6 +409,17 @@ export const auditReports: IDocumentsList[] = [
 ];
 
 export const news: IDocumentsList[] = [
+	{
+		title:
+			"Інформаційне повідомлення про результати проведення конкурсу.",
+		link: importDoc('3. ІНФОРМАЦІЙНЕ ПОВІДОМЛЕННЯ_про результати конкурсу аудиту_СЕНТ ПРО 2024.pdf'),
+	},
+	{
+		title:
+			"Оголошення про проведення конкурсу з відбору суб’єкту аудиторської діяльності для проведення\n" +
+			"аудиту фінансової звітності ТОВ «СЕНТ ПРО» за 2024 рік",
+		link: importDoc('2. Оголошення про проведення конкурсу з відбору суб\'єкта аудиторської діяльності_ТОВ СЕНТ ПРО від 02.01.2025.pdf'),
+	},
 	{
 		title:
 			"Оголошення про проведення конкурсу з відбору суб'єкта аудиторської діяльності ТОВ «СЕНТ ПРО» від 31.01.2023 р.",
