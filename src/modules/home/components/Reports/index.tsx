@@ -9,7 +9,7 @@ import {
 	infoOwnershipStructure,
 	innerRules,
 	managementReports,
-	news,
+	news
 } from '@modules/home/components/Reports/data';
 
 const Reports = () => {

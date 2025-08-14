@@ -7,7 +7,7 @@ import {
 	COMPANY_ADDRESS,
 	COMPANY_EMAIL,
 	COMPANY_MAP_LINK,
-	COMPANY_PHONE,
+	COMPANY_PHONE
 } from '@utils/const';
 
 import ICON_EMAIL from '@public/assets/icon-email.svg';
@@ -29,25 +29,25 @@ const Contacts = () => {
 		{
 			icon: ICON_MAP,
 			title: 'Адреса',
-			desc: COMPANY_ADDRESS,
+			desc: COMPANY_ADDRESS
 		},
 		{
 			icon: ICON_EMAIL,
 			title: 'Електронна Пошта',
 			desc: COMPANY_EMAIL,
-			link: `mailto:${COMPANY_EMAIL}`,
+			link: `mailto:${COMPANY_EMAIL}`
 		},
 		{
 			icon: ICON_PHONE,
 			title: 'Телефон',
 			desc: COMPANY_PHONE,
-			link: `tel:${COMPANY_PHONE}`,
+			link: `tel:${COMPANY_PHONE}`
 		},
 		{
 			icon: ICON_TIME,
 			title: 'Години Роботи',
-			desc: `ПН-ПТ з 9:00 до 19:00.\nОбідня перерва з 13:00 до 14:00.\nВихідні дні – субота та неділя.`,
-		},
+			desc: `ПН-ПТ з 9:00 до 19:00.\nОбідня перерва з 13:00 до 14:00.\nВихідні дні – субота та неділя.`
+		}
 	];
 
 	return (

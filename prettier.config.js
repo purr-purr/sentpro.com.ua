@@ -1,10 +1,11 @@
 module.exports = {
+	endOfLine: 'crlf',
 	printWidth: 80,
 	useTabs: true,
 	tabWidth: 1,
 	singleQuote: true,
 	bracketSpacing: true,
-	trailingComma: 'all',
+	trailingComma: 'none',
 	semi: true,
 	importOrder: [
 		'^react',
@@ -25,7 +26,7 @@ module.exports = {
 		'',
 		'',
 		'^@modules/(.*)/assets/(.*)$',
-		'',
+		''
 	],
 	importOrderBuiltinModulesToTop: true,
 	importOrderCaseInsensitive: true,
@@ -33,5 +34,5 @@ module.exports = {
 	importOrderMergeDuplicateImports: true,
 	importOrderCombineTypeAndValueImports: true,
 	importOrderSeparation: false,
-	importOrderSortSpecifiers: true,
+	importOrderSortSpecifiers: true
 };

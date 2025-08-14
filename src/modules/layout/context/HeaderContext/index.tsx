@@ -3,7 +3,7 @@ import {
 	FC,
 	useCallback,
 	useState,
-	type ReactNode,
+	type ReactNode
 } from 'react';
 
 import type { IHeaderContext } from '@modules/layout/context/HeaderContext/interface';
@@ -14,7 +14,7 @@ import { LAPTOP_BREAKPOINT } from '@utils/const';
 
 const HeaderContext = createContext<IHeaderContext>({
 	isMobileNavMode: false,
-	handleMobileNavMode: () => {},
+	handleMobileNavMode: () => {}
 });
 
 const HeaderContextWrapper: FC<{ children: ReactNode }> = ({ children }) => {
@@ -27,7 +27,7 @@ const HeaderContextWrapper: FC<{ children: ReactNode }> = ({ children }) => {
 
 	const headerContext: IHeaderContext = {
 		isMobileNavMode,
-		handleMobileNavMode,
+		handleMobileNavMode
 	};
 
 	if (!isLaptop) {

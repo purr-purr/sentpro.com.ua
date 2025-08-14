@@ -5,7 +5,7 @@ import {
 	APP_AUTHOR_FULL_SIGNATURE,
 	APP_LINK,
 	COMPANY_CATCHPHRASE,
-	COMPANY_FULL_NAME,
+	COMPANY_FULL_NAME
 } from '@utils/const';
 
 import FAVICON from '@public/assets/favicon.ico';

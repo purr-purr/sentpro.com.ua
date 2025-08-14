@@ -24,7 +24,7 @@ const Navigation = () => {
 		if (element) {
 			element.setAttribute(
 				'style',
-				`${isMobileNavMode ? `overflow:hidden;` : ``}`,
+				`${isMobileNavMode ? `overflow:hidden;` : ``}`
 			);
 		}
 	}, [isMobileNavMode, isLaptop]);
@@ -44,7 +44,7 @@ const Navigation = () => {
 								{item.title}
 							</Link>
 						</li>
-					),
+					)
 			)}
 		</ul>
 	);

@@ -8,7 +8,7 @@ export const navigationList: INavigationList[] = [
 	{
 		title: 'Повідомити про порушення',
 		path: '#report-violation',
-		isActive: true,
+		isActive: true
 	},
-	{ title: 'Контакти', path: '#contacts', isActive: true },
+	{ title: 'Контакти', path: '#contacts', isActive: true }
 ];
