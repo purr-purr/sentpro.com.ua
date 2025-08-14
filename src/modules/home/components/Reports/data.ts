@@ -221,7 +221,9 @@ export const infoOwnershipStructure: IDocumentsListGroup[] = [
 			{
 				title:
 					'Відомості про власників істотної участі в надавачі фінансових послуг ТОВ "СЕНТ ПРО" станом на 01.01.2022',
-				link: importDoc('3_Vidomosti-pro-vlasnykiv-istotnoi-uchasti_01.01.2022.pdf')
+				link: importDoc(
+					'3_Vidomosti-pro-vlasnykiv-istotnoi-uchasti_01.01.2022.pdf'
+				)
 			}
 		]
 	}
@@ -312,10 +314,13 @@ export const financeReports: IDocumentsListGroup[] = [
 			},
 			{
 				title: 'Звіт про власний капітал за 2024 р.',
-				link: importDoc('/reports/2024/12m/Звіт про власний капітал за 2024 р..pdf')
+				link: importDoc(
+					'/reports/2024/12m/Звіт про власний капітал за 2024 р..pdf'
+				)
 			},
 			{
-				title: 'Звіт про фінансові результати (про сукупний дохід) за 2024 рік.',
+				title:
+					'Звіт про фінансові результати (про сукупний дохід) за 2024 рік.',
 				link: importDoc(
 					'/reports/2024/12m/Звіт про фінансові результати (про сукупний дохід) за 2024 рік.pdf'
 				)
@@ -324,7 +329,7 @@ export const financeReports: IDocumentsListGroup[] = [
 				title: 'Примітки до річної фінансової звітності за 2024 рік.',
 				link: importDoc(
 					'/reports/2024/12m/Примітки до річної фінансової звітності за 2024' +
-						' р.pdf'
+					' р.pdf'
 				)
 			},
 			{
@@ -359,7 +364,7 @@ export const financeReports: IDocumentsListGroup[] = [
 					'Примітки до фінансової звітності за 9 місяців 2024 року  (25.10.2024)',
 				link: importDoc(
 					'/reports/2024/9m/Примітки до фінансової звітності за 9 місяців' +
-						' 2024 року  (25.10.2024).pdf'
+					' 2024 року  (25.10.2024).pdf'
 				)
 			},
 			{
@@ -394,7 +399,7 @@ export const financeReports: IDocumentsListGroup[] = [
 					'Примітки до фінансової звітності за 1 півріччя 2024 року  (24.07.2024)',
 				link: importDoc(
 					'/reports/2024/6m/Примітки до фінансової звітності за 1 півріччя' +
-						' 2024 року  (24.07.2024).pdf'
+					' 2024 року  (24.07.2024).pdf'
 				)
 			},
 			{
@@ -429,8 +434,8 @@ export const financeReports: IDocumentsListGroup[] = [
 					'Примітки до фінансової звітності за 1 квартал 2024 року (21.04.2024)',
 				link: importDoc(
 					'/reports/2024/3m/Примітки до фінансової звітності за 1 квартал' +
-						' 2024 року' +
-						' (21.04.2024).pdf'
+					' 2024 року' +
+					' (21.04.2024).pdf'
 				)
 			}
 		]
@@ -546,7 +551,9 @@ export const archivedInformation: IDocumentsList[] = [
 	{
 		title:
 			'Порядок розгляду ТОВ «СЕНТ ПРО» звернень споживачів фінансових послуг',
-		link: importDoc('3.Poriadok_rozghliadu_zvernen_spozhyvachiv_TOV_SENT_PRO.pdf')
+		link: importDoc(
+			'3.Poriadok_rozghliadu_zvernen_spozhyvachiv_TOV_SENT_PRO.pdf'
+		)
 	},
 	{
 		title:
@@ -588,7 +595,8 @@ export const auditReports: IDocumentsList[] = [
 	},
 	{
 		title:
-			'Незалежний звіт з надання впевненості щодо річних даних за 2021' + ' рік',
+			'Незалежний звіт з надання впевненості щодо річних даних за 2021' +
+			' рік',
 		link: importDoc(
 			'Незалежний_звіт_з_надання_впевненності_щодо_річних_звітних_даних 2021.pdf'
 		)
@@ -600,7 +608,8 @@ export const auditReports: IDocumentsList[] = [
 	},
 	{
 		title:
-			'Незалежний звіт з надання впевненості щодо річних даних за 2022' + ' рік',
+			'Незалежний звіт з надання впевненості щодо річних даних за 2022' +
+			' рік',
 		link: importDoc(
 			'Незалежний звіт з надання впевненості щодо річних звітних даних 2022.pdf'
 		)
@@ -613,7 +622,8 @@ export const auditReports: IDocumentsList[] = [
 		)
 	},
 	{
-		title: 'Незалежний звіт з надання впевненості щодо річних даних за 2023 рік',
+		title:
+			'Незалежний звіт з надання впевненості щодо річних даних за 2023 рік',
 		link: importDoc('ТОВ СЕНТ ПРО   Звіт з надання впевненості за 2023 рік.pdf')
 	}
 ];

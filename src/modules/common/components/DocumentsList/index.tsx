@@ -32,7 +32,11 @@ const DocumentsList: FC<{
 		return (
 			<ul className={s.container}>
 				{array.map((item: IDocumentsList, index: number) => (
-					<DocumentItem key={uuid + index} title={item.title} link={item.link} />
+					<DocumentItem
+						key={uuid + index}
+						title={item.title}
+						link={item.link}
+					/>
 				))}
 			</ul>
 		);
