@@ -16,8 +16,7 @@ yarn build
 yarn deploy
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the
-result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Stack
 
@@ -32,14 +31,12 @@ Also use:
 
 ## Authors
 
-Front-End Developer -
-`Anton Shaposhnikov`
+Front-End Developer - `Anton Shaposhnikov`
 
 - [LinkedIn](https://www.linkedin.com/in/shaposhnikov-dev/)
 - [Email](mailto:shaposhnikov.web@gmail.com)
 
-UI/UX Design -
-`Alina Huz`
+UI/UX Design - `Alina Huz`
 
 - [LinkedIn](https://www.linkedin.com/in/alina-huz-design/)
 - [Email](mailto:alina.huz.design@gmail.com)
