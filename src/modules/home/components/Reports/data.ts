@@ -36,7 +36,7 @@ export const infoFinancialInstitution: IDocumentsList[] = [
         title:
             'Порядок і спосіб погашення простроченої заборгованості у ТОВ «СЕНТ ПРО»',
         link: importDoc(
-            '5_Poriadok i sposib pohashennia prostrochenoi zaborhovanosti.pdf'
+            'Poriadok i sposib pohashennia prostrochenoi zaborhovanosti.pdf'
         )
     },
     {
@@ -84,7 +84,7 @@ export const infoFinancialInstitution: IDocumentsList[] = [
         title:
             'Інформація щодо ТОВ «СЕНТ ПРО», умов та порядку діяльності, уключно щодо фінансових послуг, які надаються ТОВ «СЕНТ ПРО» клієнту',
         link: importDoc(
-            'Informatsiia shchodo, umov ta poriadku diialnosti TOV SENT PRO.pdf'
+            'Informatsiia shchodo, umov ta poriadku diialnosti TOV SENT PRO (1).pdf'
         )
     },
     {
@@ -96,7 +96,7 @@ export const infoFinancialInstitution: IDocumentsList[] = [
     {
         title: 'Публічна інформація про ТОВ «СЕНТ ПРО»',
         link: importDoc(
-            '2_Publichna informatsiia pro kompaniiu TOV SENT PRO_2025.pdf'
+            'Publichna informatsiia pro kompaniiu TOV SENT PRO (1).pdf'
         )
     }
 ];
